@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* let arr = [];
+         for (let i = 0; i < 10; i++) {
+             let numbers = parseInt(prompt(`Nhập phần tử thứ ${i + 1}:`));
+             arr.push(numbers);
+         }
+     
+         // Tính số lượng phần tử lớn hơn hoặc bằng 10
+         let count = 0;
+         for (let i = 0; i < arr.length; i++) {
+             if (arr[i] >= 10) {
+                 count++;
+                 console.log(arr[i]);
+             }
+         }
+     
+         // Hiển thị kết quả
+         console.log(`Có ${count} số nguyên lớn hơn hoặc bằng 10 trong mảng .`); */
+       let count = 0;
+        let numbers = [];
+        do {
+            let num = +prompt("moi nhap so ban muon");
+            if (Number.isInteger(num)) {
+                count++;
+                if (num > 10) {
+                    numbers.push(num);
+                }
+            } else {
+                console.log("so ban nhap khong phai so nguyen nhap lai");
+            }
+        } while (count < 10);
+        console.log(numbers); 
+    </script>
+</body>
+
+</html>
